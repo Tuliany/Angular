@@ -1,0 +1,24 @@
+<!-- Data binding -->
+<h1>{{ title }}</h1> 
+
+<!-- Property binding -->
+<h1 [innerText]="title"></h1>
+<button [disabled]="isDisabled"></button>
+
+<!-- Event binding -->
+<br />
+<button (click)="onSave()">Save</button>
+
+<div>{{counterValue}}</div>
+<button (click)="increment()"> +Count</button>
+<br />
+<button on-click="add()">{{ num }}</button>
+
+<br />
+<!-- <input (input)="handleInput($event)">
+<div>{{value}}</div> -->
+
+<!-- <h2>Two way data binding</h2>
+<input (input)="name=$event.target.value"> -->
+
+<app-customer-list></app-customer-list>
