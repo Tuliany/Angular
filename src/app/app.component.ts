@@ -26,7 +26,7 @@ export class AppComponent {
     return this.num++;
   }
 
-  handleInput(event: { target: { value: string; }; }): any {
+ handleInput(event): void {
     this.value = event.target.value;
   }
 }
